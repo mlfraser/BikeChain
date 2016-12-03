@@ -18,7 +18,7 @@ difference() {
    
     //cylinder to stick out
     translate([-pinch/2,0,0])
-    cylinder(d=roller_dia - 2.4, h=1+1+inner_plate+1+.2+1.2+2 +.5+1, $fn=360);
+    cylinder(d=roller_dia - 2.4, h=1+1+inner_plate+1+.2+1.2+2 +2.5, $fn=360);
         
     //curve between circles
     translate([0,7.44,0])rotate([0,0,225])difference(){
@@ -43,7 +43,7 @@ translate([pinch/2,0,-.5])
     cylinder(d=roller_dia - 3.4, h=3, $fn=360);
 
 //gap in top cylinder
-translate([-pinch/2,0,1+1+1+inner_plate+1+.2])
+translate([-pinch/2,0,1+1+1+1+inner_plate+1+.2])
 difference() {
 
     cylinder(r=4.5, h=2.4, $fn=360);

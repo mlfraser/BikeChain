@@ -7,6 +7,6 @@ inner_plate=6.35;
 
 
 difference(){
-    cylinder(h=inner_plate - 1, d=roller_dia, $fn=360);
-    cylinder(h=inner_plate - 1, d=roller_dia - 1.8, $fn=360);
+    cylinder(h=inner_plate - .5, d=roller_dia, $fn=360);
+    cylinder(h=inner_plate - .5, d=roller_dia - 1.8, $fn=360);
 }
